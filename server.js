@@ -44,6 +44,9 @@ app.use("/api/v1/profile",profileRouts);
 app.use("/api/v1/course",courseRouts);
 app.use("/api/v1/payments",paymentRouts);
 
+app.get('/', (req, res) => {
+    return res.send('<h1>Welcome to codegurukul</h1>');
+})
 app.listen(process.env.PORT,()=>{
     console.log(`your server is running on on port :${process.env.PORT}`);
     return `<h1>Hellowworld </h1>`
