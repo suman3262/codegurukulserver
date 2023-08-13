@@ -24,7 +24,7 @@ app.use(cookieParser());
 //to entatain front-end
 app.use(
     cors({
-        origin:"https://codegurukul0.netlify.app",
+        origin:"*",
         credentials:true,
     })
 );

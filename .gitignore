@@ -1,5 +1,3 @@
 # Ignored directories
 node_modules/
 
-# Ignored .env files
-.env*
