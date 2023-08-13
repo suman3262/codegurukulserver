@@ -79,13 +79,13 @@ exports.resestPassword=async(req,res)=>{
          }
 
         //token time validation
-         if(user.resetPassExpires >Date.now())   
-         {
-            return res.json({
-                success:false,
-                message:"Please regenerate your token"
-            })
-         }
+         // if(user.resetPassExpires >Date.now())   
+         // {
+         //    return res.json({
+         //        success:false,
+         //        message:"Please regenerate your token"
+         //    })
+         // }
 
         //hash password and update the user password
        const hashPass=await bcrypt.hash(password,10);
