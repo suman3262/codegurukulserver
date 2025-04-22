@@ -42,7 +42,7 @@ cloudinaryConnect();
 app.use("/api/v1/auth",userRoutes);
 app.use("/api/v1/profile",profileRouts);
 app.use("/api/v1/course",courseRouts);
-app.use("/api/v1/payments",paymentRouts);
+app.use("/api/v1/payments",paymentRouts);//
 
 app.get('/', (req, res) => {
     return res.send('<h1>Welcome to codegurukul</h1>');
