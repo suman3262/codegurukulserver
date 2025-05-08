@@ -13,7 +13,7 @@ const {cloudinaryConnect}=require("./config/cloudinary");
 const fileUpload=require("express-fileupload");
 require("dotenv").config();
 
-//setup middleware
+
 
 //connect database
 dbConnect();
